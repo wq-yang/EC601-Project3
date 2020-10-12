@@ -2,6 +2,8 @@
 
 Wenqiang Yang (U90452596)
 
+*GitHub didn't render some of the markdown effects properly, for a better view, please see **Project3.pdf** (which will be updated after all work done)*
+
 [toc]
 
 Deploy Jitsi Meet, analyze signaling, and find security holes in session creation.
