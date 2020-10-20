@@ -88,7 +88,7 @@ I used TShark to analyze the real signaling process. TShark is a commandline too
 
 After installing it, I firstly used `tshark -i eth0 -r capture1.pcap -a duration:60` to monitor traffic packets for 60 seconds and save raw data to `capture1.pcap`. Meanwhile, I was using two device to test the WebRTC meeting on jitsiistij.tk. I forced WebRTC to use proxy so my two devices has different IP addresses. 
 
-Then I used `tshark -r capture1.pcap > tshark_output.txt` to analyze the raw data, and save them to `tshark_output.txt`. Finally, I chose some important data items of the packets, such as IP address, TCP port, etc., and saved it as a form. 
+Then I used `tshark -r capture1.pcap > tshark_output.txt` to analyze the raw data, and save them to [tshark_output.txt](https://github.com/wq-yang/EC601-Project3/blob/main/tshark_output.txt). Finally, I chose some important data items of the packets, such as IP address, TCP port, etc., and saved it as a [form](https://github.com/wq-yang/EC601-Project3/blob/main/tshark_output.csv). 
 
 ``` bash
 tshark -r capture1.pcap -T fields -e frame.time_relatice -e ip.src -e ip.dst -e ip.proto -e tcp.srcport -e tcp.dstport -e frame.len -E header=n -E separator=, -E quote=n -E occurrence=f > tshark_output.csv
